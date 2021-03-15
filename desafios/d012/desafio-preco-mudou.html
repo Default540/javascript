@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço mudou</title>
+    <style>
+        input{
+        
+        width: 160px;
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Preço mudou</h1>
+    <p><input type="button" value="verificar" onclick="verificar()"></p>
+    <h2 id="h2"></h1>
+    <div id="res">Click no botão acima para analizar a mudança de preço.</div>
+    <script>
+        function verificar() {
+        var res = document.getElementById('res')
+        var h2 = document.getElementById('h2')
+        var panterior = Number(prompt('Qual é o preço anterior do produto?'))
+        var patual = Number(prompt('Qual é o preço atual do produto?'))
+        h2.innerHTML = `Analizando valores informados`
+        res.innerHTML = `O produto custava ${panterior.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})} e agora custa ${patual.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}.<br>`
+        if (patual > panterior) {
+            res.innerHTML += `Hoje o produto esta mais caro.<br><br>O preço subiu ${(patual-panterior).toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})} em relação ao preço anterior.<br><br>Uma variação de ${(patual*100)/panterior}% para cima.`
+        }else{
+            res.innerHTML += `Hoje o produto esta mais barato.<br><br>O preço deceu ${(patual-panterior).toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})} em relação ao preço anterior.<br><br>Uma variação de ${((patual-panterior)*100)/panterior}% para baixo.`
+        }
+    
+    }
+    </script>
+</body>
+</html>

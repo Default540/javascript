@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coversor de temperatura</title>
+    <style>
+        input{
+            width: 160px;
+    padding: 10px;
+        }
+        div#res{
+            width: 370px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de temperaturas</h1>
+    <div><input type="button" value="converter" onclick="converter()"></div>
+    <div id="res">Click no botão para iniciar.</div>
+    <div id="res1"></div>
+    <script>
+        function converter() {
+           var temp = Number(prompt('Digite uma temperatura em C° (Celsius)'))
+           var res = document.getElementById('res')
+           var res1 = document.getElementById('res1')
+           res.innerHTML = `<strong>A temperatura de ${temp.toFixed(2).replace('.',',')}°C, corresponde a...</strong>`
+           res1.innerHTML = `${(temp+273.15).toFixed(2).replace('.',',')}°K (Kelvin) <br><br>${((temp*1.8)+32).toFixed(2).replace('.',',')}°F (Fahrenheit)`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor R$ -> US$</title>
+    <style>
+        input{
+        
+            width: 160px;
+            padding: 10px;
+        }
+        div#res{
+            width: 500px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor R$ -> US$</h1>
+    <div><input type="button" value="Converter" onclick="converter()"></div>    
+    <div id="res">Click no botão acima para iniciar.</div>
+</body>
+<script>
+    var preço = Number(prompt('Antes de mais nada. Quanto esta o dolar agora?'))
+    function converter() {
+        var dinheiro = Number(prompt('Quantos R$ você tem na carteira?'))
+        var res = document.querySelector('div#res')
+        res.innerHTML = `Você tem ${(dinheiro/preço).toLocaleString('pt-br', {style: 'currency', currency: 'USD'})}!`
+
+    }
+
+</script>
+</html>
