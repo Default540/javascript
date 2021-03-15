@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula Troco</title>
+    <style>
+         input{
+    
+    width: 160px;
+    padding: 10px;
+
+}
+    </style>
+</head>
+<body>
+    <h1>Calculando o Troco</h1>
+    <p><input type="button" value="Comprar produto" onclick="compra()"></p>
+    <script>
+        function compra() {
+            var produto = prompt('Qual produto você esta comprando?')
+            var preço = Number(prompt(`Quanto custa o(a) ${produto} que você esta comprando?`))
+            var dinheiro = Number(prompt(`Qual valor você deu para pagar pelo(a) ${produto}?`))
+            
+            
+            
+            if(dinheiro > preço){
+            var p = preço
+            var d = dinheiro
+            var res = dinheiro-preço
+            alert(`Você comprou o(a) ${produto} que custou ${preço.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}.\nDeu ${dinheiro.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})} em dinheiro e vai receber ${res.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})} de troco.\nVolte sempre!`)
+            }else if (dinheiro == preço) {
+                alert(`Você comprou o(a) ${produto} que custou ${preço.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}.\nDeu ${dinheiro.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})} em dinheiro e assim ficando sem troco.\nVolte sempre!`)
+            }else if (dinheiro < preço){
+                alert(`infelizmente não foi pocivel comprar o(a) ${produto} pois faltou dinheiro\nVolte sempre!`)
+            }
+           
+           
+            
+    }
+    </script>
+</body>
+</html>
