@@ -1,14 +1,52 @@
-<img src="imagens/mascote.png" align="right" width="300">
+# Repositorio GitHub
+ Meu primeiro repositorio do github
+ 
+ adicionei no site! 
+ gg
 
-# Curso de JavaScript
 
-Material público para o ensino básico de JavaScript para alunos iniciantes. Acesse o material em PDF, analise o código disponibilizado para cada exercício e veja-os funcionando em execução direta via repositório GitHub.
+# titulo
+---
+## titulo
+***
+_estou_ __aprendendo__ *linguagem* **markdown**  ~~com~~ o github
 
-* [Acesse os PDFs das aulas clicando aqui](https://github.com/gustavoguanabara/javascript/tree/master/aulas-pdf)
-* [Código disponível para os exercícios](https://github.com/gustavoguanabara/javascript/tree/master/exercicios)
-* [Execute os exercícios aqui](https://gustavoguanabara.github.io/javascript/exercicios/index.html)
-* [Resolva os desafios de programação JS aqui](https://github.com/gustavoguanabara/javascript/tree/master/desafios)
+da para _**misturar**_ configurações
 
-## Direitos de uso
+lista numerada:
+1. teste
+2. teste
+   1. teste
+   5. teste
+6. teste
 
-Você tem todo o direito de usar esse material para seu próprio aprendizado. Professores também podem ter acesso a todo o conteúdo e usá-los com seus alunos. Porém todos o que usarem esse material - seja para qual for a finalidade - deverão manter a referência ao material original, criado e disponibilizado pelo Prof. Gustavo Guanabara. Este conteúdo não poderá ser utilizado em nenhuma hipótese para ser replicada - integral ou parcialmente - por autores/ editoras/ instituições de ensino para criar livros ou apostilas, com finalidades de obter ganho financeiro com ele.
+
+
+lista dermacada:
+
+* teste
+- teste
+* teste
+   - teste
+   * teste
+  
+
+lista de tarefas:
+
+- [ ] teste
+- [x] teste
+- [ ] teste
+![imagem](https://user-images.githubusercontent.com/80178842/111083305-ad9f2080-84eb-11eb-8ce7-9ab952d07444.png)
+[acesse o GitHub](https://github.com/)
+
+Num | Nome | Nota
+---|---|---
+1 | Default | 300
+2 | sua mae | -30qi
+2 | teste | 0
+
+
+comando `window.document.getElementById()`
+
+ola 👍 🖖 
+
